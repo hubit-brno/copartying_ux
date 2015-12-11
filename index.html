@@ -1,0 +1,173 @@
+<html>
+
+<head>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <style>
+        div.panel h1
+        {
+            margin-top: 5px;
+        }
+
+        div.panel h2
+        {
+            margin-top: 20px;
+        }
+
+        div.panel h2:first-child
+        {
+            margin-top: 0px;
+        }
+
+        div.items ul
+        {
+            padding-left: 0px;
+        }
+
+        div.items ul li
+        {
+            list-style: none;
+        }
+
+        div.progress
+        {
+            height: auto;
+        }
+
+        div.progress > div.progress-bar
+        {
+            height: auto;
+        }
+
+        li.item
+        {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        li.item > *
+        {
+            flex: 1 0 auto;
+            border: none;
+        }
+
+        li.item div.progress
+        {
+            margin: 0;
+        }
+
+        li.item button, li.item input
+        {
+            flex: 0 0 auto;
+            margin: 0;
+        }
+
+        li.item input[type="text"]
+        {
+            width: 10%;
+            text-align: center;
+        }
+
+        body
+        {
+            padding-top: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <h1>Piknik v Hubu</h1>
+
+                            <div class="row">
+                                <div class="col-xs-6 date">
+                                    Datum: 4.11.2015
+                                </div>
+                                <div class="col-xs-6 time">
+                                    Čas: 23:00
+                                </div>
+                            </div>
+
+                            <h2>Místo</h2>
+                            <iframe style="height: 300px; width: 100%; border: 0;"
+                                    src="https://www.google.com/maps/embed/v1/place?q=Cyrilská+7,+602+00+Brno-střed,+Česká+republika&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU" height="240"
+                                    width="320"></iframe>
+
+                            <h2>Popis párty</h2>
+
+                            <p>Setkání třetího druhu pro všechny ajťáky, programátory, vývojáře, geeky i nerdy. Milovníky kódu, technologií a vtipů, kterým nikdo jiný nerozumí.</p>
+
+                            <p>Potkejte se s ostatními Hubáky, kteří mluví stejným jazykem. Zapněte šedou kůru mozkovou, nažhavte klávesnice, vyřešte zadání a získejte zpětnou vazbu. Prostor bude i
+                                pro krátká
+                                představení vlastních projektů formou lightning talks a nebude chybět vychlazené pivo na baru.</p>
+
+                            <a href="#" class="btn btn-lg btn-primary">Chci dojít</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <h2>Co přinesu</h2>
+
+                    <p>Každý přinese, co má nejraději a párty může začít! Umíte skvělý rebarborový koláč nebo doma vaříte pivo? Nemůžeme se dočkat až ochutnáme. Nebo prostě kupte pytlík brambůrek, ty
+                        přijdou vhod vždycky. Co je v piknikovém košíku, to se počítá!</p>
+
+                    <p>Vyber si co přineseš a přines to!</p>
+
+                    <div class="items">
+                        <ul>
+                            <li class="item">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 50%">
+                                        Coca-Cola
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-sm btn-primary">&ndash;</button>
+                                <input type="text" value="2">
+                                <button class="btn btn-sm btn-primary">&plus;</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="js/ripples.min.js"></script>
+<script src="js/material.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // This command is used to initialize some elements and make them work properly
+        $.material.init();
+    });
+</script>
+
+</body>
+
+</html>
